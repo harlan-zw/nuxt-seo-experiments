@@ -33,7 +33,7 @@ function addGeneratedRouteRule(nuxt: Nuxt, route: string, generatedRule: Generat
 
 export default async function generateTagsFromPageDirImages(nuxt: Nuxt = useNuxt()): Promise<void> {
   const pagesDirs = nuxt.options._layers
-    .map(layer => resolve(layer.config.rootDir!, layer.config.dir?.pages || 'pages'))
+    .map(layer => resolve(layer.config.srcDir || layer.cwd, layer.config.dir?.pages || 'pages'))
     .filter(dir => fs.existsSync(dir))
 
   const appendRouteRules: Record<string, GeneratedRouteRule> = {}
