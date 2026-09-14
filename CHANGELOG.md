@@ -1,3 +1,9 @@
+## 8.5.1
+
+[Compare changes](https://github.com/harlan-zw/nuxt-seo-utils/compare/v8.5.0...v8.5.1)
+
+- fix(page-dir-images): resolve pages dir against layer srcDir (#144) ([f57bb13](https://github.com/harlan-zw/nuxt-seo-utils/commit/f57bb134fba6bc1d59c0662d51e77fb0df77b51a))
+
 # Changelog
 
 
